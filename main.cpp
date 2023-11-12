@@ -7,11 +7,11 @@ std::vector<std::vector<int>> board;
 
 int askNumberOfPlayers(int& p_number_of_players) {
     std::string user_verification;
-    std::cout << "Hello, how many players do you want (2-9)?" << std::endl;
+    std::cout << "How many players do you want (2-9)?" << std::endl;
     std::cin >> p_number_of_players;
     std::cout << "You want " << p_number_of_players << " players (y/n)?" << std::endl;
     std::cin >> user_verification;
-    if ((user_verification == "y" || user_verification == "Y") && (p_number_of_players > 1) && (p_number_of_players > 10)) {
+    if ((user_verification == "y" || user_verification == "Y") && (p_number_of_players > 1) && (p_number_of_players < 10)) {
         number_of_players = p_number_of_players;
         return number_of_players;
     } else {
@@ -44,7 +44,13 @@ void displayBoard(int p_size_board) {
     std::cout << p_size_board << std::endl;
 }
 
+void displayTitle() {
+    // ASKI DU JEUX "Laying Grass"
+    std::cout << "Hello !" <<std::endl;
+}
+
 void run() {
+    displayTitle();
     int run_number_of_players = setSizeBoard(askNumberOfPlayers(number_of_players));
     fillBoard(run_number_of_players);
     displayBoard(run_number_of_players);
