@@ -72,6 +72,10 @@ int main() {
 // placer les pi!ces
 // faire toutes les pièces
 // code aski nom du jeux lancement
+
+// Tableau liste de joeur taille // Ask number of player
 // Lis les TXT aléatoires
+// Couleurs choisi par le joeur
 // Forme avec des 0, if else transforme les 0 en l'index du joueur
+// Transforme les O en niveaux
 // code couleurs --> if else colorama fonction des chiffres
