@@ -1,9 +1,25 @@
 #include <iostream>
+#include <string>
 #include <vector>
 
 int size_board = 20;
 int number_of_players = 0;
+//const int player_boar_size = 9;
+//int player_board[player_boar_size][player_boar_size];
 std::vector<std::vector<int>> board;
+
+//int createPlayerBoard(int p_player_boar_size, int p_number_of_players){
+//    int player = 1;
+//    while (player < p_number_of_players){
+//        for (int x = 0; x < p_player_boar_size; x++){
+//            for (int y = 0; y < p_player_boar_size; y++){
+//                player_board[x][y] = x;
+//            }
+//            std::cout << std::endl;
+//        }
+//        board.
+//    };
+//};
 
 int askNumberOfPlayers(int& p_number_of_players) {
     std::string user_verification;
@@ -36,7 +52,7 @@ void displayBoard(int p_size_board) {
     for (int x = 0; x < p_size_board; x++) {
         for (int y = 0; y < p_size_board; y++) {
             if (board[x][y] == 0) {
-                std::cout << "x";
+                std::cout << ".";
             }
         }
         std::cout << std::endl;
@@ -56,12 +72,14 @@ void run() {
     displayBoard(run_number_of_players);
 }
 
+
 int main() {
     run();
     return 0;
 }
 
-
+// Enregister les fomes, avec rotations et inversion
+// Clean console
 
 // Mettre input nombre de jouer / entre 2 9
 //Return 2 to 9 players, the order of play determined randomly. From 2 to 4 players, the grid will be 20x20 squares; from 5 to 9, 30x30.
@@ -80,12 +98,10 @@ int main() {
 // Transforme les O en niveaux
 // code couleurs --> if else colorama fonction des chiffres
 
-//Développement / todo CPP
 //- COMPRENDRE BIEN CONSIGNES / VIDÉO COMPRENDRE
 //- Fonction lire le txt
 //- Les placer mettre couleurs du joueur en bouger avec ZQSD comme cardinal chain
 //- Conditions de victoire / égalité
-//- Commencer C++ (voir todo.txt) sur mac faire tout en console + sans autre fichier un seul fichier lire + txt figure toutes+ comprendre
 //- Finir les titles
 //- Pointeur tableau
 //- Zone de spawn des jouer
