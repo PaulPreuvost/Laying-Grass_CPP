@@ -79,3 +79,18 @@ int main() {
 // Forme avec des 0, if else transforme les 0 en l'index du joueur
 // Transforme les O en niveaux
 // code couleurs --> if else colorama fonction des chiffres
+
+//Développement / todo CPP
+//- COMPRENDRE BIEN CONSIGNES / VIDÉO COMPRENDRE
+//- Fonction lire le txt
+//- Les placer mettre couleurs du joueur en bouger avec ZQSD comme cardinal chain
+//- Conditions de victoire / égalité
+//- Commencer C++ (voir todo.txt) sur mac faire tout en console + sans autre fichier un seul fichier lire + txt figure toutes+ comprendre
+//- Finir les titles
+//- Pointeur tableau
+//- Zone de spawn des jouer
+//- Dictionnaire couleurs des joueurs indexe des joueurs /MAP containeur
+//- Couleurs
+//- Déplacer une pièce
+//- Plateau autre
+//- Lire txt
